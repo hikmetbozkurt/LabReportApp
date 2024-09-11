@@ -5,10 +5,9 @@ interface Report {
   firstName: string;
   lastName: string;
   patientId: string;
-  diagnosisTitle: string;
+  diagnosisTitle: string | null;
   diagnosisDetails: string;
   reportDate: Date | null;
-  reportImages: File[];
 }
 
 interface ReportState {
@@ -16,7 +15,7 @@ interface ReportState {
 }
 
 const initialState: ReportState = {
-  reports: []
+  reports: [],
 };
 
 const reportSlice = createSlice({
@@ -26,8 +25,8 @@ const reportSlice = createSlice({
     addReport: (state, action: PayloadAction<Report>) => {
       state.reports.push(action.payload);
     },
-    // Other actions like deleteReport, updateReport could go here if needed
-  }
+    // Other actions like deleteReport, updateReport will go here
+  },
 });
 
 export const { addReport } = reportSlice.actions;
