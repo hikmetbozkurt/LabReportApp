@@ -15,7 +15,7 @@ function App() {
           justifyContent: "center", // Horizontally center the Container
           alignItems: "center", // Vertically center the Container
           minHeight: "100vh", // Ensure the div takes up the full viewport height
-          backgroundColor: "#f0f4f8", // Page background color
+          backgroundColor: "#FFF8DC", // Page background color : Cornsilk
         }}
       >
         <Container
@@ -30,7 +30,16 @@ function App() {
           }}
         >
           <Center mt="md">
-            <Title order={1} style={{ color: "#FFFFFF" }}>
+            <Title
+              order={1}
+              style={{
+                //fontStyle: "italic", // Italic text
+                fontWeight: "bold", // Bold for extra emphasis
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Subtle shadow for depth
+                color: "#FFB6C1", // lightPink
+                fontFamily: "sans-serif",
+              }}
+            >
               {" "}
               {/* White text for better contrast */}
               Laborant Report App
