@@ -1,0 +1,8 @@
+.mantine-DateInput-dropdown {
+    max-width: 300px; /* Limit width */
+  }
+  
+  .mantine-DateInput-calendar {
+    width: 100%; /* Ensure calendar fits the dropdown */
+  }
+  
